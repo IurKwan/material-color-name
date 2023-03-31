@@ -1,8 +1,8 @@
 <idea-plugin>
     <id>il.co.galex.namethatcolor</id>
-    <name>Name That Color</name>
+    <name>NameThatColor</name>
     <version>1.7.1</version>
-    <vendor email="alexandre.gherschon@gmail.com" url="http://galex.co.il/namethatcolor">Alexander Gherschon</vendor>
+    <vendor email="alexandre.gherschon@gmail.com" url="http://galex.co.il/namethatcolor">Rui</vendor>
 
     <description><![CDATA[
       Name the color you have in your clipboard directly inside your color resource file in Android Studio.<br>
@@ -14,7 +14,7 @@
     <b>1.7.1</b><br>
      - Updated plugin to latest IntelliJ version (2020.3)<br>
      ]]></change-notes>
-    <idea-version since-build="201.6668.113"/>
+    <idea-version since-build="221.6008.13"/>
 
     <depends optional="true" config-file="withKotlin.xml">org.jetbrains.kotlin</depends>
 

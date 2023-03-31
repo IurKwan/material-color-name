@@ -1,31 +1,53 @@
 buildscript {
     repositories {
+        maven {
+            url "https://plugins.gradle.org/m2/"
+        }
+        maven {
+            url 'https://maven.aliyun.com/repository/public/'
+        }
+        maven {
+            allowInsecureProtocol = true
+            url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+        }
         mavenCentral()
         jcenter()
     }
 }
 
 plugins {
-    id "org.jetbrains.intellij" version "0.6.5"
-    id "org.jetbrains.kotlin.jvm" version "1.4.30-RC"
+    id "org.jetbrains.intellij" version "0.7.2"
+    id "org.jetbrains.kotlin.jvm" version "1.5.0"
 }
 
 repositories {
+    maven {
+        url "https://plugins.gradle.org/m2/"
+    }
+    maven {
+        url 'https://maven.aliyun.com/repository/public/'
+    }
+    maven {
+        allowInsecureProtocol = true
+        url 'http://maven.aliyun.com/nexus/content/repositories/releases/'
+    }
     mavenCentral()
     jcenter()
 }
 
 intellij {
-    version '2020.3.2'
-    pluginName 'NameThatColor'
-    type 'AI'
+//    pluginName = "NameThatColor"
+    version = "221.6008.13"
+//    version = "2022.1.1.19"
+    plugins = ['android']
+//    type = "AI"
 }
 
 publishPlugin {
-    token pluginsDevToken
+//    token pluginsDevToken
 }
 
 patchPluginXml {
-    version "1.7.1"
-    sinceBuild '201.6668.113'
+    version = "1.7.3"
+    sinceBuild = "201.6668.113"
 }
