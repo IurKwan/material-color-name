@@ -36,11 +36,8 @@ repositories {
 }
 
 intellij {
-//    pluginName = "NameThatColor"
-    version = "221.6008.13"
-//    version = "2022.1.1.19"
+    version = "222.4459.24"
     plugins = ['android']
-//    type = "AI"
 }
 
 publishPlugin {
